@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Travel Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /*background-color: #74a2bc;*/
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup {
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        form h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: black;
+        }
+
+        form label {
+            display: block;
+            margin: 8px 0 4px;
+            font-size: 13px;
+            color: #444;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: black;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+          
+        }
+
+            form button:hover {
+                background-color: #333;
+            }
+
+        form a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            
+            text-decoration: none;
+        }
+
+            form a:hover {
+                text-decoration: underline;
+            }
+        .sign1 {
+            border: 2px hidden red;
+            height: 500px;
+            width: 900px;
+            display: flex;
+            margin-left:100px;
+            border-radius: 4px;
+           
+        }
+        .sign2 {
+            border: 2px hidden green;
+            width: 400px;
+            background-image: url("Images/aboutus1 - Copy.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius:4px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="sign1">
+        <div class="sign2">
+
+        </div>
+        <section class="signup">
+            <form>
+                <h1>Sign Up</h1>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required />
+
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword" placeholder="CPassword" required />
+
+                <a href="home.html"> <button type="submit" class="sign">Sign Up</button></a>
+                <a href="login.html">Already have an account? Login</a>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>

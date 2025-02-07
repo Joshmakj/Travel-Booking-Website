@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        header {
+            border: 2px hidden black;
+            height: 110px;
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            top: 0.1px;
+            z-index: 10;
+        }
+
+        .navitems2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 100px;
+            gap: 10px;
+            background-color: white;
+            box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+            background-color: white;
+            margin-left: 100px;
+        }
+
+            .navitems2 li {
+                text-align: center;
+                border: 1px hidden black;
+                background-color: white;
+                padding: 7px;
+                border-radius: 30px;
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 12px;
+                overflow: hidden;
+                position: relative;
+            }
+
+        li a {
+            border: 1px hidden black;
+            padding: 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+            border-radius: 30px;
+            height: 50px;
+            width: 150px;
+            background-color: white;
+        }
+
+            li a:hover {
+                background-color: black;
+                color: white;
+            }
+
+        .Home {
+            border: 2px hidden black;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 100%;
+            background-image: url('Images/185289.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            align-items: center;
+            top: 110px;
+            z-index: -1;
+        }
+
+        .toprow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 0;
+        }
+
+        
+        .jetsetgo {
+            font-family: shrikhand,Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            color: black;
+            margin-left:40px;
+        }
+
+
+
+        .searchb {
+            background-color: #f5f5f5;
+            flex: 1;
+            margin-right: auto;
+            max-width: 300px;
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+            .searchb input {
+                flex: 1;
+                border: none;
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .searchb button {
+                background-color: #f5f5f5;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                cursor: pointer;
+                border-left: 1px solid #ccc;
+            }
+
+                .searchb button:hover {
+                    background-color: #eaeaea;
+                }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navitems1 {
+            display: flex;
+            border: 2px hidden black;
+            height: 50px;
+            width: 500px;
+            gap: 35px;
+            margin-right: -20px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            align-items: flex-end;
+            justify-content: center;
+            padding-right: -7px;
+        }
+
+        hr {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navitems1 a {
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 50px;
+        }
+
+        .logout1 {
+            background-color: black;
+            color: white;
+            padding: 7px 20px;
+            border-radius: 70px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 90px;
+        }
+
+        .a0 {
+            color: black;
+        }
+
+        .a1 {
+            color: black;
+        }
+
+        .logout1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .a0:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .a1:hover {
+            background-color: black;
+            color: white;
+        }
+
+       
+
+        footer {
+            border: 1px hidden black;
+            height: 350px;
+            width: 100%;
+            position: relative;
+            top: 330px;
+            z-index: -1;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+            footer div {
+                background-color: black;
+            }
+
+        .f1, .f4 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 300px;
+        }
+
+        .f2, .f3 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 200px;
+        }
+
+        .f1 pre {
+            font-family: none;
+            font-size: 20px;
+            line-height: 1.3;
+            align-items: flex-start;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        .f2 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+        }
+
+        .f3 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+        }
+
+        .icon1 {
+            border: 1px hidden black;
+            display: flex;
+            width: 30px;
+            height: 30px;
+            margin-top: 36px;
+        }
+
+        address {
+            border: 1px hidden black;
+            font-style: normal;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: sans-serif;
+            text-align: justify-all;
+            margin-top: 40px;
+            margin-left: 14px;
+        }
+
+            address span {
+                display: block;
+                margin-left: 1px;
+            }
+
+        .iconaddress {
+            display: flex;
+        }
+
+        .contact-item {
+            display: flex;
+        }
+
+        .phnoicon {
+            display: flex;
+        }
+
+        .phno {
+            margin-left: 14px;
+            
+        }
+
+        .phnoicon img {
+            height: 20px;
+            width: 20px;
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+
+        .f4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mailicon {
+            display: flex;
+        }
+
+            .mailicon img {
+                height: 20px;
+                width: 20px;
+                margin-left: 10px;
+            }
+
+            .mailicon a {
+                margin-left: 20px;
+            }
+
+        .wildlife {
+            background-image: url("Images/wildlife.jpg");
+            background-size: cover;
+        
+        }
+
+        .Honeymoon {
+            background-image: url("Images/honeymoon.jpg");
+            background-size: cover;
+        }
+
+        .pilgram {
+            background-image: url("Images/pilgram.jfif");
+            background-size: cover;
+        }
+
+        .beach {
+            background-image: url("Images/beach.jfif");
+            background-size: cover;
+        }
+
+        .c1 {
+            border: 2px hidden red;
+            height: 200px;
+            width: 45%;
+            position: relative;
+            top: 140px;
+            margin-left:70px;
+            line-height: 0.4;
+            padding:10px;
+            background-image: linear-gradient(to right, #ff433a, #ff577c);
+        }
+       .c1 h1{
+           font-family:Arial;
+           margin-left:100px;
+           font-size:30px;
+           color:white;
+           font-weight:bold;
+           padding-top:5px;
+         
+       }
+      
+       .c1 button{
+           margin-left:150px;
+           padding:12px;
+           width:300px;
+           font-size:22px;
+           background-color:white;
+           border-color:white;
+           font-weight:700;
+           border-radius:4px;
+           
+       }
+
+       .c2{
+           position:relative;
+           top:170px;
+           margin-left:100px;
+       }
+
+        .manalipackages {
+            border: 1px hidden red;
+            height: 300px;
+            width: 90%;
+            position: relative;
+            top: 150px;
+            margin: auto;
+          
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+        }
+
+            .manalipackages div {
+                border: 1px hidden green;
+                height: 250px;
+                width: 40%;
+                display: flex;
+            }
+
+        .desc {
+            border: 5px hidden orange;
+            height: 150px;
+            width: 90%;
+            position: relative;
+            top: 100px;
+            margin: auto;
+            
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+        }
+
+            .desc div {
+                width: 40%;
+                display: flex;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+            }
+
+       
+
+        .packimg1 {
+            background-image: url("Images/hotel1.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .packimg2 {
+            background-image: url("Images/hotel2.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .packimg3 {
+            background-image: url("Images/hotel3.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        .pack2img1 {
+            background-image: url("Images/hotel4.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pack2img3 {
+            background-image: url("Images/hotel5.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        .pack2img2 {
+            background-image: url("Images/hotel6.PNG");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .desc div {
+            display: block;
+            padding-left: 5px;
+        }
+        .n3 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .pre1 {
+            font-size: 14px;
+            font-weight: 800;
+            color: #333333;
+            font-family: sans-serif;
+        }
+
+        .cs {
+            border: 1px solid transparent;
+            height: 40px;
+            width: 100px;
+            margin-left: 235px;
+            padding: 5px;
+            position: relative;
+            top: 0px;
+            color: white;
+            background-image: linear-gradient(to right, #ff433a, #ff577c);
+            border-radius: 2px;
+        }
+        .cs a{
+            text-decoration:none;
+            color:white;
+        }
+        .head1{
+            position:relative;
+            top:150px;
+            margin-left:70px;
+        }
+
+        .secdiv {
+            border: 2px hidden black;
+            height: 215px;
+            width: 95%;
+            margin-left: 609px;
+            position: relative;
+            top: -143px;
+            display: flex;
+            background-image: url(Images/2690563.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+         .head1 a{
+             text-decoration:none;
+             color:black;
+         }
+
+         button a{
+             text-decoration:none;
+             color:black;
+         }
+
+        .f3 a, .f2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="toprow">
+
+             
+                <span class="jetsetgo">WanderSphere</span>
+                <div class="searchb">
+                    <input type="text" placeholder="Search destinations, activities...">
+                </div>
+                <div class="navitems1">
+                    <a href="enquiry.html" class="a0">Enquiry</a>
+
+                    <a href="signup.html" class="a1">Sign up</a>
+                    <a href="login.html" class="logout1">Logout</a>
+                </div>
+            </div>
+
+            <hr />
+            <ul class="navitems2">
+
+                <li><a href="index.html">Home</a></li>
+                <li class="d1">
+                    <a href="destination.html">Explore destination</a>
+
+
+                </li>
+                <li> <a href="booking.html">Book</a></li>
+
+                <li><a href="hotelmain.html">Hotels</a></li>
+ 
+                <li><a href="restaurantmain.html">Food & dining</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="c1">
+        <h1>Best Hotels All Over The World</h1>
+        <br /><br />
+        <button><a href="signup.html">Explore Now</a></button>
+        <div class="secdiv">
+            <div class="h1"></div>
+            <div class="h2"></div>
+            <div class="h3"></div>
+        </div>
+    </section>
+
+
+
+    <h1 class="head1"><b><a href="indianhotels.html">Best Hotels In India </a></b></h1>
+    <section class="manalipackages">
+        <div class="packimg1"></div>
+        <div class="packimg2"></div>
+        <div class="packimg3"></div>
+
+    </section>
+    <section class="desc">
+        <div>
+            <pre class="pre1">Montana Blues Resort by Snow City</pre>
+
+            <p><b>₹6,750</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+        <div>
+            <pre class="pre1">Hotel Smugglers Mountain View-Air Cooled</pre>
+
+            <p><b>₹5,550</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+
+        <div>
+            <pre class="pre1">The Holiday Villa Resort & Spa</pre>
+
+            <p><b>₹4,000</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+    </section>
+
+
+    <h1 class="head1"><b><a href="indianhotels.html">Best Hotels In Singapore </a></b></h1>
+    <section class="manalipackages">
+        <div class="packimg1"></div>
+        <div class="packimg2"></div>
+        <div class="packimg3"></div>
+
+    </section>
+    <section class="desc">
+        <div>
+            <pre class="pre1">Montana Blues Resort by Snow City</pre>
+
+            <p><b>₹6,750</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+        <div>
+            <pre class="pre1">Hotel Smugglers Mountain View-Air Cooled</pre>
+
+            <p><b>₹5,550</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+
+        <div>
+            <pre class="pre1">The Holiday Villa Resort & Spa</pre>
+
+            <p><b>₹4,000</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+    </section>
+
+
+
+    <h1 class="head1"><b><a href="indianhotels.html">Best Hotels In Thailand</a> </b></h1>
+    <section class="manalipackages">
+        <div class="packimg1"></div>
+        <div class="packimg2"></div>
+        <div class="packimg3"></div>
+
+    </section>
+    <section class="desc">
+        <div>
+            <pre class="pre1">Montana Blues Resort by Snow City</pre>
+
+            <p><b>₹6,750</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+        <div>
+            <pre class="pre1">Hotel Smugglers Mountain View-Air Cooled</pre>
+
+            <p><b>₹5,550</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+
+        <div>
+            <pre class="pre1">The Holiday Villa Resort & Spa</pre>
+
+            <p><b>₹4,000</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+    </section>
+
+    <h1 class="head1"><a href="indianhotels.html"><b>Best Hotels In Canada </b></a></h1>
+    <section class="manalipackages">
+        <div class="packimg1"></div>
+        <div class="packimg2"></div>
+        <div class="packimg3"></div>
+
+    </section>
+    <section class="desc">
+        <div>
+            <pre class="pre1">Montana Blues Resort by Snow City</pre>
+
+            <p><b>₹6,750</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+        <div>
+            <pre class="pre1">Hotel Smugglers Mountain View-Air Cooled</pre>
+
+            <p><b>₹5,550</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+
+        <div>
+            <pre class="pre1">The Holiday Villa Resort & Spa</pre>
+
+            <p><b>₹4,000</b>/person</p>
+            <button class="cs"><a href="booking.html"><b>Book Now</b></a></button>
+        </div>
+
+    </section>
+    <footer>
+        <div class="f1">
+            <h3>WanderSphere</h3>
+
+            <pre> Far far away, behind the word
+ mountains, far from the 
+countries Vokalia and 
+Consonantia, there live the 
+blind texts.
+   </pre>
+        </div>
+        <div class="f2">
+            <h3>Information</h3>
+            <a href="images/travelguide.pdf" download> About</a>
+            <a href="images/travelguide.pdf" download> Service</a>
+            <a href="images/travelguide.pdf" download> Terms and Conditions </a>
+            <a href="images/travelguide.pdf" download> Become a partner </a>
+            <a href="images/travelguide.pdf" download>Best Price Guarantee</a>
+            <a href="images/travelguide.pdf" download> Privacy and Policy</a>
+        </div>
+        <div class="f3">
+            <h3>Customer Support</h3>
+            <a href="images/travelguide.pdf" download> FAQ</a>
+            <a href="images/travelguide.pdf" download>Payment Option</a>
+            <a href="images/travelguide.pdf" download> Booking Tips</a>
+            <a href="images/travelguide.pdf" download>How it works</a>
+            <a href="images/travelguide.pdf" download> Contact Us</a>
+        </div>
+        <div class="f4">
+            <h3>Have a Questions?</h3>
+            <div class="iconaddress">
+                <img class="icon1" src="Images\adressicon.png" />
+                <address>
+
+                    203 Fake St. Mountain View, San <span>Francisco, California, USA</span>
+
+
+                </address>
+            </div>
+            <div class="phnoicon">
+                <img src="Images\gggggg-removebg-preview.png" />
+                <p class="phno">+2 392 3929 210</p>
+            </div>
+            <div class="mailicon">
+                <img src="Images\mailicon.png" />
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

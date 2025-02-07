@@ -1,0 +1,1094 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        header {
+            border: 2px hidden black;
+            height: 110px;
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            top: 0.1px;
+            z-index: 10;
+        }
+
+        .home-subnav {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 100px;
+            gap: 10px;
+            background-color: white;
+            background-color: white;
+            margin-left: 70px;
+        }
+
+            .home-subnav li {
+                text-align: center;
+                border: 1px hidden black;
+                background-color: white;
+                padding: 7px;
+                border-radius: 30px;
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 12px;
+                overflow: hidden;
+                position: relative;
+            }
+
+        li a {
+            border: 1px hidden black;
+            padding: 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+            border-radius: 30px;
+            height: 50px;
+            width: 150px;
+            background-color: white;
+        }
+
+            li a:hover {
+                background-color: black;
+                color: white;
+            }
+
+        .Home-content {
+            border: 2px hidden black;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 100%;
+            background-image: url('Images/185289.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            align-items: center;
+            top: 110px;
+        }
+
+        .home-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 0;
+        }
+
+     
+
+            .logo img {
+                height: 50px;
+            }
+
+        .website-name {
+            font-family: shrikhand,Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            color: black;
+            margin-left:40px;
+        }
+
+
+
+        .search-bar {
+            background-color: #f5f5f5;
+            border-color: white;
+            flex: 1;
+            margin-right: auto;
+            max-width: 300px;
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+            .search-bar input {
+                flex: 1;
+                border: none;
+                padding: 10px;
+                font-size: 1rem;
+                outline: none;
+            }
+
+            .search-bar button {
+                background-color: #f5f5f5;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border-left: 1px solid #ccc;
+                border-color: white;
+            }
+
+                .search-bar button:hover {
+                    background-color: white;
+                }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .home-mainnav {
+            display: flex;
+            border: 2px hidden black;
+            height: 50px;
+            width: 500px;
+            gap: 35px;
+            margin-right: -20px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            align-items: flex-end;
+            justify-content: center;
+            padding-right: -7px;
+        }
+
+        hr {
+            margin: 0;
+            width: 100%;
+        }
+
+        .home-mainnav a {
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 50px;
+        }
+
+        .home-mainnav a:hover {
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 50px;
+        }
+
+        .logout1 {
+            background-color: black;
+            color: white;
+            padding: 7px 20px;
+            border-radius: 70px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 90px;
+        }
+
+        .enquiry-link {
+            color: black;
+        }
+
+        .signup-link{
+            color: black;
+        }
+
+        .logout1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .enquiry-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .signup-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        .home-desc {
+            color: white;
+            border: 3px hidden black;
+            height: 300px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+            .home-desc h5 {
+                font-size: 2rem;
+                font-weight: 900;
+                color: orange;
+                letter-spacing: 2px;
+                text-align: center;
+                margin-bottom: 15px;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+            }
+
+            .home-desc h4 {
+                /* color: white;
+        font-size: 100px;
+        font-weight: 550; */
+                font-family: Arial;
+                font-size: 2rem;
+                font-weight: 900;
+                color: white;
+                letter-spacing: 2px;
+                text-align: center;
+                margin-bottom: 15px;
+                margin: 0;
+                padding: 0;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+            }
+
+
+
+
+        .register {
+            background-color: white;
+            color: white;
+            padding: 7px 20px;
+            border-radius: 80px;
+            text-decoration: none;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 90px;
+        }
+
+            .register a {
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+                font-weight: bold;
+                z-index: 3;
+            }
+
+                .register a:hover {
+                    background-color: black;
+                    color: white;
+                    border: 1px solid black;
+                }
+
+
+
+        .top-destination {
+            border: 2px hidden black;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            top: 170px;
+        }
+
+            .top-destination h4 {
+                color: #212121;
+                font-size: 35px;
+                font-weight: 800;
+                line-height: 36px;
+                padding-left: 48px;
+                margin: 0;
+            }
+
+        .destination-content {
+            border: 1px hidden black;
+            height: 220px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3px;
+            top: 10px;
+            padding-top: 25px;
+        }
+
+            .destination-content div {
+                border: 1px hidden black;
+                height: 220px;
+                width: 170px;
+                border-radius: 0px;
+            }
+
+        .destination-description {
+            border: 1px hidden red;
+            height: 50px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+            margin-top: -17px;
+            align-items: center;
+        }
+
+            .destination-description div {
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+                height: 30px;
+                width: 169px;
+                padding-top: -3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                font-size: 14px;
+                font-weight: bold;
+                margin-left: 20px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+        .destination-india {
+            background-image: url("Images/singapore_enhanced.jfif");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-canada {
+            background-image: url("Images/canada_enhanced.jpg");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-italy {
+            background-image: url("Images/wp9801235-italy-4k-wallpapers.jpg");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-america {
+            background-image: url("Images/us.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-maldives {
+            background-image: url("Images/wp14641467-maldives-overwater-bungalows-wallpapers.jpg");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-london {
+            background-image: url("Images/india.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .Home2 {
+            border: 1px hidden black;
+            height: 220px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3px;
+            padding-top: 10px;
+        }
+
+            .home2 div {
+                flex: 0 0 auto;
+                border: 1px hidden black;
+                height: 220px;
+                width: 170px;
+                border-radius: 0px;
+            }
+
+        .home22 {
+            border: 1px hidden red;
+            height: 50px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            margin-top: -10px;
+        }
+
+            .home22 div {
+                flex: 0 0 auto;
+                border: 1px hidden red;
+                height: 30px;
+                width: 169px;
+                padding-top: -12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+        .destination7 {
+            background-image: url("Images/london.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination8 {
+            background-image: url("Images/france.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination9 {
+            background-image: url("Images/italy.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination10 {
+            background-image: url("Images/us.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination11 {
+            background-image: url("Images/pexels-ressam-dogada-2148710014-30238276.jpg");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination12 {
+            background-image: url("Images/india.png");
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-restaurants {
+            border: 1px hidden red;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            top: 200px;
+        }
+
+            .home-restaurants h4 {
+                color: #212121;
+                font-size: 35px;
+                font-weight: 800;
+                line-height: 36px;
+                padding-left: 48px;
+                margin: 0;
+            }
+
+        .restaurant-content {
+            border: 1px hidden black;
+            height: 220px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3px;
+            padding-top: 10px;
+        }
+
+            .restaurant-content div {
+                flex: 0 0 auto;
+                border: 1px hidden black;
+                height: 220px;
+                width: 300px;
+            }
+
+        .restaurants-details {
+            border: 1px hidden red;
+            height: 50px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            margin-top: -7px;
+        }
+
+            .restaurants-details div {
+                flex: 0 0 auto;
+                border: 1px hidden red;
+                height: 40px;
+                width: 169px;
+                padding-top: -12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 17px;
+                font-weight: bold;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+        .services {
+            border: 1px hidden red;
+            width: 100%;
+            height: 350px;
+            position: relative;
+            top: 300px;
+            z-index: -1;
+            text-align: center;
+            background-color: white;
+        }
+
+            .services h4 {
+                color: #212121;
+                font-size: 35px;
+                font-weight: 800;
+                line-height: 36px;
+                padding-left: 48px;
+                margin: 0;
+            }
+
+        .services-content {
+            border: 1px hidden black;
+            height: 200px;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1px;
+            padding-top: 14px;
+        }
+
+            .services-content div {
+                flex: 0 0 auto;
+                border: 1px hidden black;
+                height: 190px;
+                width: 300px;
+                border-radius: 10px;
+                text-align: center;
+                display: relative;
+                align-content: center;
+            }
+
+        .d1 img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1 h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d2 img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d2 h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d3 img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d3 h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d4 img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d4 h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1 {
+            margin-bottom: 4px;
+        }
+
+        .d2 {
+            margin-bottom: 0px;
+        }
+
+        .d3 {
+            margin-top: 3px;
+        }
+
+        .d4 {
+            margin-top: 8px;
+        }
+
+
+        footer {
+            border: 1px hidden black;
+            height: 350px;
+            width: 100%;
+            position: relative;
+            top: 330px;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+            footer div {
+                background-color: black;
+            }
+
+        .footer1, .footer4 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 300px;
+        }
+
+        .footer2, .footer3 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 200px;
+        }
+
+        .footer1 pre {
+            font-family: none;
+            font-size: 20px;
+            line-height: 1.3;
+            align-items: flex-start;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        .footer2 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+        }
+
+        .footer3 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+        }
+
+        .footer2 h3, .footer3 h3 {
+            font-size: 23px;
+        }
+
+
+        .icon1 {
+            border: 1px hidden black;
+            display: flex;
+            width: 30px;
+            height: 30px;
+            margin-top: 36px;
+        }
+
+        address {
+            border: 1px hidden black;
+            font-style: normal;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: sans-serif;
+            text-align: justify-all;
+            margin-top: 40px;
+            margin-left: 14px;
+        }
+
+            address span {
+                display: block;
+                margin-left: 1px;
+            }
+
+        .iconaddress {
+            display: flex;
+        }
+
+        .phnoicon {
+            display: flex;
+        }
+
+        .phno {
+            margin-left: 14px;
+        }
+
+        .phnoicon img {
+            height: 20px;
+            width: 20px;
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+
+        .footer4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mailicon {
+            display: flex;
+        }
+
+            .mailicon img {
+                height: 20px;
+                width: 20px;
+                margin-left: 10px;
+            }
+
+            .mailicon a {
+                margin-left: 20px;
+            }
+
+        .italian-restaurant {
+            background-image: url("Images/pexels-ali-dashti-506667798-29186508.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .indian-restaurant {
+            background-image: url("Images/wp12956029-restaurant-4k-wallpapers.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .canadian-restaurant {
+            background-image: url("Images/pexels-fineasanton-2993065.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .american-restaurant {
+            background-image: url("Images/pexels-peps-silvestro-180443212-13350094.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .d1:hover .dropdown {
+            display: block;
+        }
+
+        .home-subnav {
+            font-size: 18px;
+        }
+
+        .home-mainnav {
+            font-size: 17px;
+        }
+
+        .changecontent::after {
+            content: ' ';
+            color: #ffa500;
+            text-shadow: 0px 1px 1px black;
+            animation: changetext 10s infinite linear;
+        }
+
+        @keyframes changetext {
+            0% {
+                content: "France";
+            }
+
+            10% {
+                content: "Spain";
+            }
+
+            20% {
+                content: "United States";
+            }
+
+            30% {
+                content: "China";
+            }
+
+            40% {
+                content: "India";
+            }
+
+            50% {
+                content: "Pakistan";
+            }
+
+            60% {
+                content: "Italy";
+            }
+
+            70% {
+                content: "Turkey";
+            }
+
+            80% {
+                content: "Mexico";
+            }
+
+            90% {
+                content: "Germany";
+            }
+
+            100% {
+                content: "United kingdom";
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .canada-desc {
+            position: relative;
+            right: 4px;
+        }
+
+        .italy-desc {
+            position: relative;
+            right: 8px;
+        }
+
+        .america-desc {
+            position: relative;
+            right: 11px;
+        }
+
+        .maldives-desc {
+            position: relative;
+            right: 15px;
+        }
+
+        .india-desc {
+            position: relative;
+            right: 19px;
+        }
+
+        .restaurants-details .london-desc {
+            width: 299px;
+            position: relative;
+            left: 2px;
+        }
+
+        .restaurants-details .canada-desc {
+            width: 299px;
+            position: relative;
+            left: 1px;
+        }
+
+        .restaurants-details .italy-desc {
+            width: 299px;
+            position: relative;
+            left: 0px;
+        }
+
+        .restaurants-details .america-desc {
+            width: 299px;
+            position: relative;
+            left: -1px;
+        }
+
+        .london-desc a, .canada-desc a, .italy-desc a, .america-desc a, .maldives-desc a, .india-desc a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .restaurant-heading a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .destination-heading a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer2 a{
+            text-decoration:none;
+            color:white;
+        }
+        .footer3 a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="home-nav">
+               
+                <span class="website-name">WanderSphere</span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search destinations, activities...">
+                </div>
+                <div class="home-mainnav">
+                    <a href="enquiry.html" class="enquiry-link">Enquiry</a>
+                    <a href="signup.html" class="signup-link">Sign up</a>
+                    <a href="login.html" class="logout1">Logout</a>
+                </div>
+            </div>
+        <hr />
+        <ul class="home-subnav">
+            <li><a href="index.html">Home</a></li>
+            <li class="d1">
+                <a href="destination.html">Explore destination</a>
+            </li>
+            <li> <a href="booking.html">Book</a></li>
+            <li><a href="hotelmain.html">Hotels</a></li>
+            <li><a href="restaurantmain.html">Food & dining</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+           
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!--Home Section-->
+    <section class="Home-content">
+        <div class="home-desc">
+
+            <h5>Explore The World </h5>
+            <h4>Make Every Destination Your Home</h4>
+            <h3>Visit <span class="changecontent"></span></h3>
+        </div>
+    </section>
+    <!--Destinations-->
+    <section class="top-destination">
+        <h4 class="destination-heading"><a href="destination.html">Explore Top Destinations</a></h4><br />
+        <div class="destination-content">
+            <div class="destination-india"></div>
+            <div class="destination-canada"></div>
+            <div class="destination-italy"></div>
+            <div class="destination-america"></div>
+            <div class="destination-maldives"></div>
+            <div class="destination-london"></div>
+        </div>
+
+        <div class="destination-description">
+            <div class="london-desc"><a href="indiaintro.html">India</a></div>
+            <div class="canada-desc"><a href="indiaintro.html">Canada</a></div>
+            <div class="italy-desc"><a href="indiaintro.html">Italy</a></div>
+            <div class="america-desc"><a href="indiaintro.html">America</a></div>
+            <div class="maldives-desc"><a href="indiaintro.html">Maldives</a></div>
+            <div class="india-desc"><a href="indiaintro.html">London</a></div>
+        </div>
+    </section>
+    <br /><br /><br />
+
+    <!--Restaurant Section-->
+    <section class="home-restaurants">
+        <h4 class="restaurant-heading"><a href="restaurantmain.html">Explore Famous Restaurants</a> </h4><br /><br />
+        <div class="restaurant-content">
+            <div class="italian-restaurant">
+            </div>
+            <div class="indian-restaurant">
+            </div>
+            <div class="canadian-restaurant"></div>
+            <div class="american-restaurant"></div>
+        </div>
+        <div class="restaurants-details">
+            <div class="london-desc"><a href="food.html">Indian Restaurants</a></div>
+            <div class="canada-desc"><a href="food.html">Italian Restaurants</a></div>
+            <div class="italy-desc"><a href="food.html">Canadian Restaurants</a></div>
+            <div class="america-desc"><a href="food.html">American Restaurants</a></div>
+        </div>
+
+    </section>
+    <br /><br />
+    
+
+    <!--Our Servies -->
+
+    <section class="services">
+        <h4>Our Services</h4><br />
+       <div class="services-content">
+            <div class="d1">
+                <img src="Images\1.PNG" />
+                <h3> Discover the possibilities</h3>
+                <p>With nearly half a million attractions, hotels & more, you're sure to find joy.</p>
+            </div>
+            <div class="d2">
+                <img src="Images\2.PNG" />
+                <h3> Enjoy deals & delights</h3>
+                <p> Quality activities. Great prices. Plus, earn Klook credits to save more.</p>
+            </div>
+            <div class="d3">
+                <img src="Images\3.PNG" />
+                <h3> Exploring made easy</h3>
+
+                <p>Book last minute, skip lines & get free cancellation for easier exploring.</p>
+            </div>
+            <div class="d4">
+                <img src="Images\4.PNG" />
+                <h3>Travel you can trust </h3>
+               <p> Read reviews & get reliable customer support. We're with you at every step.</p>
+
+            </div>
+        </div>
+    </section>
+<!--Services end-->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer1">
+            <h3>WanderSphere</h3>
+            <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+        </div>
+        <div class="footer2">
+            <h3>Information</h3>
+            <a href="images/travelguide.pdf" download> About</a>
+            <a href="images/travelguide.pdf" download> Service</a>
+            <a href="images/travelguide.pdf" download> Terms and Conditions </a>
+            <a href="images/travelguide.pdf" download> Become a partner </a>
+            <a href="images/travelguide.pdf" download>Best Price Guarantee</a>
+            <a href="images/travelguide.pdf" download> Privacy and Policy</a>
+        </div>
+        <div class="footer3">
+            <h3> Customer Support</h3>
+            <a href="images/travelguide.pdf" download> FAQ</a>
+            <a href="images/travelguide.pdf" download>Payment Option</a>
+            <a href="images/travelguide.pdf" download> Booking Tips</a>
+            <a href="images/travelguide.pdf" download>How it works</a>
+            <a href="images/travelguide.pdf" download> Contact Us</a>
+        </div>
+        <div class="footer4">
+            <h3>Have a Questions?</h3>
+            <div class="iconaddress">
+                <img class="icon1" src="Images\adressicon.png" />
+                <address>  203 Fake St. Mountain View, San <span>Francisco, California, USA</span></address>
+            </div>
+            <div class="phnoicon">
+                <img src="Images\gggggg-removebg-preview.png" />
+                <p class="phno">+2 392 3929 210</p>
+            </div>
+            <div class="mailicon">
+                <img src="Images\mailicon.png" />
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </div>
+        </div>
+    </footer>
+    <!--foooter ends-->
+</body>
+
+</html>

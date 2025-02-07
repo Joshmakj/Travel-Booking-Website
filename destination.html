@@ -1,0 +1,793 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        header {
+            font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        header {
+            border: 2px hidden black;
+            height: 110px;
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            top: 0.1px;
+            z-index:10;
+        }
+
+        .navbar2 {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.5;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 100px;
+            gap: 5px;
+            background-color: white;
+            margin-left: 90px;
+        }
+
+            .navbar2 li {
+                text-align: center;
+                border: 1px hidden black;
+                background-color: white;
+                padding: 7px;
+                border-radius: 30px;
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 12px;
+                overflow: hidden;
+                position: relative;
+            }
+
+        li a {
+            border: 1px hidden black;
+            padding: 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+            border-radius: 30px;
+            height: 50px;
+            width: 150px;
+            background-color: white;
+        }
+
+            li a:hover {
+                background-color: black;
+                color: white;
+            }
+
+        .Home {
+            border: 2px hidden black;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 100%;
+            background-image: url('Images/185289.jpg');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            align-items: center;
+            top: 110px;
+            
+        }
+
+        .nav-sections {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 0;
+        }
+
+        .website-name {
+            font-family: shrikhand,Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            color: black;
+            margin-left:40px;
+        }
+
+
+
+        .search-bar {
+            background-color: #f5f5f5;
+            flex: 1;
+            margin-right: auto;
+            max-width: 300px;
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+            .search-bar input {
+                flex: 1;
+                border: none;
+                padding: 10px;
+                font-size: 1rem;
+                outline: none;
+            }
+
+            .search-bar button {
+                background-color: #f5f5f5;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                cursor: pointer;
+                border-left: 1px solid #ccc;
+            }
+
+                .search-bar button:hover {
+                    background-color: #eaeaea;
+                }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar1 {
+            display: flex;
+            border: 2px hidden black;
+            height: 50px;
+            width: 500px;
+            gap: 35px;
+            margin-right: -20px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.5;
+            align-items: flex-end;
+            justify-content: center;
+            padding-right: -7px;
+        }
+
+        hr {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar1 a {
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 50px;
+        }
+
+        .logout1 {
+            
+            background-color: black;
+            color: white;
+            padding: 7px 20px;
+            border-radius: 70px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 90px;
+        }
+
+        .a0 {
+            color: black;
+        }
+
+        .a1 {
+            color: black;
+        }
+
+        .logout1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .a0:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .a1:hover {
+            background-color: black;
+            color: white;
+        }
+
+       
+        footer {
+            border: 1px hidden black;
+            height: 350px;
+            width: 100%;
+            position: relative;
+            top: 100px;           
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+            footer div {
+                background-color: black;
+              
+            }
+
+        .f1, .f4 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 300px;
+            font-size: 17px;
+        }
+
+        .f2, .f3 {
+            border: 2px hidden black;
+            height: 350px;
+            width: 200px;
+            font-size: 17px;
+        }
+
+        .f1 p {
+            font-family: none;
+            font-size: 20px;
+            line-height: 1.3;
+            align-items: flex-start;
+            font-weight: 300;
+            text-align: justify;
+            font-size: 17px;
+        }
+
+        .f2 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+            font-size: 17px;
+        }
+
+        .f3 a {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.2;
+            font-size: 16px;
+        }
+
+        .icon1 {
+            border: 1px hidden black;
+            display: flex;
+            width: 30px;
+            height: 30px;
+            margin-top: 36px;
+        }
+
+        address {
+            border: 1px hidden black;
+            font-style: normal;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: sans-serif;
+            text-align: justify-all;
+            margin-top: 40px;
+            margin-left: 14px;
+        }
+
+            address span {
+                display: block;
+                margin-left: 1px;
+            }
+
+        .iconaddress {
+            display: flex;
+        }
+
+        .phnoicon {
+            display: flex;
+        }
+
+        .phno {
+            margin-left: 14px;
+        }
+
+        .phnoicon img {
+            height: 20px;
+            width: 20px;
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+
+        .f4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mailicon {
+            display: flex;
+        }
+
+            .mailicon img {
+                height: 20px;
+                width: 20px;
+                margin-left: 10px;
+            }
+
+            .mailicon a {
+                margin-left: 20px;
+            }
+        .tour1 {
+            border: 2px hidden black;
+            height: 600px;
+            width: 100%;
+            position: relative;
+            top: 110px;
+            z-index: -1;
+            background-image: url("Images/1431657 (1).jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tour2{
+            border:2px hidden red;
+            height:500px;
+            width:100%;
+            position:relative;
+            top:130px;
+         
+        }
+
+        .tourhead {
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .tourdestinations {
+            border: 2px hidden red;
+          
+            height: 320px;
+            width: 98%;
+            display: flex;
+            justify-content:space-evenly;
+            position:relative;
+          
+        }
+
+            .tourdestinations div {
+                border: 2px hidden red;
+                width: 20%;
+                height: 300px;
+                padding: 20px;
+                position: relative;
+                height: 320px;
+            
+                display: block;
+                
+                color: #f9ab30;
+                
+            }
+
+        .singapore {
+            background-image: url(" Images/wp14938230-indian-castle-wallpapers.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .canada {
+            background-image: url("Images/canada_enhanced.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .thailand {
+            background-image: url("Images/marcin-kalinski-PCgM2CYm6HA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .australia {
+            background-image: url("Images/austra_enhanced.jfif");
+            background-size: cover;
+            background-position: center;
+        }
+        .desspan1, .desspan2, .desspan3, .desspan4, .desspan11, .desspan12, .desspan13, .desspan14 {
+            color: #fff;
+            margin-top: 0px;
+            font-weight: 900;
+            line-height: 1.5;
+          
+            font-size: 1.40em;
+           
+        }
+
+        .london {
+            background-image: url("Images/wp5018680-london-4k-wallpapers.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .italy {
+            background-image: url("Images/wp8729398-italy-aesthetic-wallpapers.jpg" );
+            background-size: cover;
+            background-position: center;
+        }
+
+        .maldives {
+            background-image: url("Images/uwp4480290.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .india {
+            background-image: url("Images/singapore_enhanced.jfif");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .tourdestinations {
+            position: relative;
+            z-index: -1; 
+        }
+
+        .sing1 span{
+            position: absolute;
+            bottom: 12px;
+            right: 1px;
+            background-color: #33313b;
+           
+            font-size: 1.2rem;
+            border-radius: 20px 0 0 20px;
+         
+            color: white;
+          
+           padding:5px;
+           
+        }
+
+            .sing1  {
+                text-decoration: none;
+                color: white;
+                display: block;
+              
+            }
+
+                .sing1 a:hover {
+                    background-color: yellow;
+                    color: black;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                }
+        .heading {
+            border: 2px hidden red;
+            height: 100px;
+            width: 98%;
+            
+            position: relative;
+            top: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content:center;
+            align-items:center;
+        }
+            .heading div {
+                border: 2px solid #f8f9fa;
+                width: 20%;
+                height: 100px;
+                box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+                font-size:26px;
+                font-weight:bold;
+                text-align:center;
+            }
+
+            .descontent{
+                border:3px hidden white;
+                height:100px;
+                width:500px;
+                margin:auto;
+                display:flex;
+                justify-content:center;
+            }
+                .descontent h1 {
+                    color: whitesmoke;
+                    font-size: 65px;
+                    font-weight: 900;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+                   
+                }
+
+        .checkin {
+            border: 2px hidden black;
+            height: 100px;
+            width: 75%;
+            margin: auto;
+            background-color:black;
+            position: relative;
+            top: 60px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+           
+            align-items:center;
+            
+        }
+              
+        .checkin div {
+            border: 2px hidden black;
+            height: 100px;
+            width: 20%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+           
+        }
+      
+        .searchdes label{
+            font-size:20px;
+            color:white;
+        }
+
+        .formgrp label {
+            font-size: 20px;
+            color:white;
+        }
+
+        input[type="search"], input[type="date"], select {
+            height: 30px;
+            width: 170px;
+            border-color:white;
+        }
+
+        .button1 {
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            margin-right: 12px;
+        }
+
+        input[type="search"] {
+            border-radius: 30px;
+        }
+
+        .button1 {
+            background-color: orange;
+            border-color: orange;
+        }
+
+        .desc {
+            border: 2px hidden orange;
+            height: 120px;
+            width: 1260px;
+            position: relative;
+            top: 104px;
+            display: flex;
+            gap: 15px;
+            justify-content: space-around;
+            margin-left: 17px;
+        }
+
+            .desc div {
+                border: 2px hidden red;
+                width: 23%;
+                height: 20px;
+                padding: 20px;
+                position: relative;              
+                display: block;
+                color: #f9ab30;
+                margin-left:3px;       
+                padding-left: 5px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+            }
+
+        .desc2 {
+            border: 2px hidden orange;
+            height: 120px;
+            width: 1260px;
+            position: relative;
+            top: -10px;
+            
+            display: flex;
+            gap: 15px;
+            justify-content: space-around;
+            margin-left: 17px;
+        }
+
+            .desc2 div {
+                border: 2px hidden red;
+                width: 23%;
+                height: 20px;
+                padding: 20px;
+                position: relative;
+                display: block;
+                color: #f9ab30;
+                margin-left: 3px;
+                padding-left: 5px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+            }
+       
+            .country{
+              
+                text-align:center;
+            }
+                .country a {
+                    text-decoration: none;
+                    color:black;
+                    font-size:24px;
+                    font-weight:bold;
+                }
+       
+                .f2 a,.f3 a{
+                    text-decoration:none;
+                    color:white;
+                }
+    </style>
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <nav>
+            <div class="nav-sections">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <span class="website-name">WanderSphere</span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search destinations, activities...">
+                </div>
+                <div class="navbar1">
+                    <a href="enquiry.html" class="a0">Enquiry</a>
+
+                    <a href="signup.html" class="a1">Sign Up</a>
+                    <a href="login.html" class="logout1">Logout</a>
+                </div>
+            </div>
+
+            <hr />
+            <ul class="navbar2">
+                <li><a href="index.html">Home</a></li>
+                <li class="d1">
+                    <a href="destination.html">Explore destination</a>
+                </li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="hotelmain.html">Hotels</a></li>
+                <li><a href="restaurantmain.html">Food & dining</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+             
+               
+                <li><a href="login.html.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--header section end-->
+
+    <!--destinations heading-->
+    <section class="tour1">
+        <div class="descontent">
+            <h1>Places to Travel</h1>
+        </div>
+    </section>
+    <!--Destination Search form-->
+    <form>
+        <div class="checkin">
+            <div class="searchdes">
+                <br />
+                <label for="destination">Destination</label><br />
+                <input type="search" name="destination" id="destination" placeholder="Enter destination" />
+            </div>
+            <div class="formgrp">
+                <br />
+                <label for="checkin">Check-in date</label><br />
+                <input type="date" id="checkin" name="checkin" />
+            </div>
+            <div class="formgrp">
+                <br />
+                <label for="checkout">Check-out date</label><br />
+                <input type="date" id="checkin" name="checkin" />
+            </div>
+            <div class="formgrp">
+                <br />
+                <label for="price">Price limit</label><br />
+                <select id="price" name="price">
+                    <option value="10000">Upto 10000</option>
+                    <option value="10000">Upto 20000</option>
+                    <option value="20000">Upto 30000</option>
+                    <option value="30000">upto 50000</option>
+                </select>
+            </div>
+            <button type="submit" class="button1">
+                <span class="s1">Search</span>
+            </button>
+        </div>
+    </form>
+
+    <!--Destinations details-->
+    <section class="tour2">
+        <center> <h1 class="tourhead">Best Place Destination</h1></center>
+        <br />
+        <div class="tourdestinations">
+            <div class="singapore">
+                <span class="sing1"><span> 10 Packages   </span></span>
+            </div>
+
+            <div class="canada">
+                <span class="sing1"><span>12 Packages</span> </span>
+            </div>
+            <div class="thailand">
+                <span class="sing1"><span>8 Packages</span></span>
+            </div>
+            <div class="australia">
+                <span class="sing1"><span>8 Packages</span></span>
+            </div>
+        </div>
+    </section>
+    <section class="desc">
+
+        <div class="country">
+            <a href="indiaintro.html">India </a>
+        </div>
+
+        <div class="country">
+            <a href="indiaintro.html">Canada </a>
+        </div>
+
+        <div class="country">
+            <a href="indiaintro.html">Thailand </a>
+        </div>
+
+        <div class="country">
+            <a href="indiaintro.html">Australia </a>
+        </div>
+
+
+    </section>
+
+   
+
+
+    <footer>
+        <div class="f1">
+            <h3>WanderSphere</h3>
+
+            <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div class="f2">
+            <h3> Information</h3>
+            <a href="images/travelguide.pdf" download> About</a>
+            <a href="images/travelguide.pdf" download> Service</a>
+            <a href="images/travelguide.pdf" download> Terms and Conditions </a>
+            <a href="images/travelguide.pdf" download> Become a partner </a>
+            <a href="images/travelguide.pdf" download>Best Price Guarantee</a>
+            <a href="images/travelguide.pdf" download> Privacy and Policy</a>
+        </div>
+        <div class="f3">
+            <h3> Customer Support</h3>
+            <a href="images/travelguide.pdf" download> FAQ</a>
+            <a href="images/travelguide.pdf" download>Payment Option</a>
+            <a href="images/travelguide.pdf" download> Booking Tips</a>
+            <a href="images/travelguide.pdf" download>How it works</a>
+            <a href="images/travelguide.pdf" download> Contact Us</a>
+        </div>
+        <div class="f4">
+            <h3>Have a Questions?</h3>
+            <div class="iconaddress">
+                <img class="icon1" src="Images\adressicon.png" />
+                <address> 203 Fake St. Mountain View, San <span>Francisco, California, USA</span> </address>
+            </div>
+            <div class="phnoicon">
+                <img src="Images\gggggg-removebg-preview.png" />
+                <p class="phno">+2 392 3929 210</p>
+            </div>
+            <div class="mailicon">
+                <img src="Images\mailicon.png" />
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
